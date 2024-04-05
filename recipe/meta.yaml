@@ -79,7 +79,7 @@ about:
   license_family: MIT
   license_file: LICENSE.md
   summary: Conan C/C++ package manager
-  doc_url: http://docs.conan.io/en/latest/
+  doc_url: https://docs.conan.io/en/latest/
   dev_url: https://github.com/conan-io/conan
 
 extra:
