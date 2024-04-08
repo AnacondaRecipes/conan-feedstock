@@ -25,6 +25,7 @@ requirements:
     - python >=3.6
     - pip
     - wheel
+    - setuptools
   run:
     - python >=3.6
     - pyjwt >=2.4.0,<3.0.0
