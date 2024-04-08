@@ -18,14 +18,12 @@ build:
     - conan=conans.conan:run
     - conan_server=conans.conan_server:run
     - conan_build_info=conans.build_info.command:run
-  script: {{ PYTHON }} -m pip install --no-deps --no-build-isolation . --ignore-installed --no-cache-dir -vvv
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
     - python >=3.6
     - pip
-    - wheel
-    - setuptools
   run:
     - python >=3.6
     - pyjwt >=2.4.0,<3.0.0
@@ -80,14 +78,9 @@ about:
   license_family: MIT
   license_file: LICENSE.md
   summary: Conan C/C++ package manager
-  doc_url: https://docs.conan.io/en/latest/
+  doc_url: http://docs.conan.io/en/latest/
   dev_url: https://github.com/conan-io/conan
 
 extra:
-  anaconda-services:
-    ref: https://anaconda.zendesk.com/agent/tickets/46418
-    reason: Client request
   recipe-maintainers:
-    - ianaobi
-    - bkreider
     - abloemert
