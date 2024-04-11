@@ -18,7 +18,7 @@ build:
     - conan=conans.conan:run
     - conan_server=conans.conan_server:run
     - conan_build_info=conans.build_info.command:run
-  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+  script: {{ PYTHON }} -m pip install  --no-deps --no-build-isolation . --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
